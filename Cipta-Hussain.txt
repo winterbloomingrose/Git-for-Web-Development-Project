@@ -1,0 +1,153 @@
+https://codepen.io/ciptah666/pen/oNzJMqj
+
+        1. What is Semantic HTML? 
+> Semantic HTML are elements that describe the structure of an element to both the browser and the web developer (ex: <summary>, <article>, <footer>, <header> are self explanatory in their purposes). These elements describe what they represent on the page through their names, and give an idea of what they look like. It is easier (in most cases) for developers to navigate code with semantic classes. Additionally, Semantic HTML allows more accessibility via screen readers.
+
+        2. What is HTML used for? 
+> HTML (Hypertext Markup Language) is used to structure a webpage to turn it from plain text to something more digestible.
+
+        3. What is an attribute and where do we put it? 
+> An attribute gives more information about an element, and normally comes after the element name in its tag (ex: the "href" attribute follows the "a" element in <a href=""/>. Attributes normally are followed by a value in quotes.
+
+        4. What is the h1 tag used for? How many times should I use it on a page?
+> The h1 tag is one example of the header tags that run from h1-h6. It is the largest in size of all of them, and should only be used once for the Title of the webpage in order to create contrast and proper emphasis.
+
+        5. Name two tags that have required attributes
+> The tag "img" has the required attribute "src".    The "embed" tag has the required attribute "type".
+
+        6. What do we put in the head of our HTML document? 
+> In the <head> of an HTML document, there are normally the following elements:
+	<title>
+	<h1>
+	<meta> (and associated attributes)
+
+        7. What is an id? 
+> An id allows an element in HTML to be styled uniquely. It is case sensitive and should only be used once on a page. It can be selected in CSS by a hashtag with the id name following it (as compared to a class, which uses a period.) 
+
+        8. What elements can I add an id to? 
+> All except <base>, <head>, <html>, <meta>, <script>, <style>, <title>. Some of these can technically be assigned ids but it would be pointless to do so.
+
+        9. How many times can I use the same id on a page? 
+> The same id should only be used once per page.
+
+        10. What is a class? 
+> A class allows an element (or multiple elements) in HTML to be styled (selected in CSS using a period before the class name, unlike an id which use a hashtag). Unlike ids, multiple elements can have the same class.
+
+        11. What elements can I add a class to? 
+> All except <base>, <basefont>, <head>, <html>, <meta>, <param>, <script>, <style>, <title>. Some of these can technically be assigned classes but it would be pointless to do so.
+
+        12. How many times can I use the same class on a page? 
+> There is no numerical limit to using the same class on the page, only a matter of aesthetic and how much you're willing to lag your computer.
+
+        13. How do I get my link to open in a new tab?
+> By including the "target" attribute after the value assigned to "href" and assigning "_blank" to it. Many developers choose to include the "rel" attribute after in order to prevent phishing via tabnabbing.
+Example:
+	<a href="linkgoeshere" target="blank_"/> 
+
+        14. What is the alt attribute in the image tag used for? 
+> The alt attribute in the img tag is used to describe the image being l
+
+        15. How do I reference an id?
+> An id is selected in CSS using a hashtag before it.
+
+        16. What is the difference between a section and a div
+> A section is a part of semantic HTML, while divs do not have any meaning aside from being used to reference in the stylesheet.
+
+        17. What is CSS used for? 
+> CSS is used to style HTML. It is skin and physical features while HTML would be the skeleton. Though styling is possible in HTML (inline programming) it is typically regarded as bad practice.
+
+        18. How to we select an element? Example - every h2 on the page
+> By adding the following code to the CSS of the webpage:
+	h2 { 
+	/* style properties go here */
+	}
+The "h2" can be substituted for any other element name (ex: div, p, section, etc).
+
+        19. What is the difference between a class and an id? - Give me an example of when I might use each one
+> "Id" is unique and can only be used once on the page, "class" can be used multiple times to consistently style multiple elements that may be different (ex: h2 and a p) types, but share the same style.
+
+        20. How do we select classes in CSS?
+> In order to select classes in CSS, a period is used following the name of the class
+	.classname {
+	/* style properties go here */
+	}
+
+        21. How do we select a p element with a single class of “human””?
+> By adding the following code to the CSS of the webpage:
+	p.human { 
+	/* style properties go here */
+	} 
+
+        22. What is a parent child selector? When would this be useful? 
+> A parent-child selector is one that selects all elements derived from another specific element. For example,    "article > h2" would select all h2 elements that are nested under the article element. This would be useful in cases it would be more efficient to specify all of an element under a certain condition get this styling, rather than individually styling each of these elements in order to avoid the elements to be excluded (as using a general "h2" property in the example would style every h2 on the page, regardless of if they were under an article parent.
+
+        23. How do you select all links within a div with the class of sidebar?
+> By adding the following code to the CSS of the webpage:
+	div.sidebar a {
+	/* style properties go here */
+	} 
+
+        24. What is a pseudo selector?
+> If HTML was a skeleton, CSS the physical appearance, psuedo-selectors would be outfits for special occasions, limited edition outfits, a temporary power-up. For example, the selector "a" selects all links, while "a:hover" would apply to all links when they are hovered.
+
+        25. What do we use the change the spacing between lines?
+> The CSS property "line-height".
+
+        26. What do we use to change the spacing between letters?
+> The CSS property "letter-spacing".
+
+        27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+> To change all text in an element to a specific case (overriding and take priority over however said text was typed in the source code), the CSS property "text-transform" would be used. Assigning the values "uppercase" "lowercase" will change the text to all upper or lowercase respectively, and assigning the value "capitalize" will capitalize the first letter of every word.
+
+        28. How do I add a 1px border around my div that is dotted and black?
+> By adding the following code to the CSS of the webpage:
+	div { 
+	border: 1px dotted #000000
+	}
+
+        29. How do I select everything on the page? 
+> In CSS, the "*" selector allows everything on the page to be selected.
+
+        30. How do I write a comment in CSS?
+>    Start comment off with "/*" and end with "*/". Example: /* comment */
+
+        31. How do I find out what file I am in, when I am using the command line? 
+> The command "pwd" prints the pathway of the current working directory.
+
+        32. Using the command line - how do I see a list of files/folders in my current folder?
+> The command "ls" is used in order to see a list of the current folder's contents. 
+
+        33. How do I remove a file via the command line? Why do I have to be careful with this? 
+>    The command "rm" followed by the file name. This causes the file to be irreversibly deleted, as compared to deleting something by moving it to the trash bin or other methods.
+
+        34. Why should I use version control? 
+> In order to keep track of changes and decisions in an organized way, a digital breadcrumbs trail in order to retrace your/your team's steps. Also important for a team to understand which version is most up to date.
+
+        35. How often should I commit to Github?
+> Whenever a project has significantly different features, enough to update.
+
+        36. What is the command we would use to push our repo up to github? 
+> git push -u origin main
+
+        37. Walk me through Lambda's git flow. 
+> Fork repository, add Mentor/Team Leader, clone forked repository,    create branch inside of repository, push branch to github, add TL as reviewer on pull request.
+
+
+Stretch Questions
+
+        1. What is the difference between an inline element and a block element?
+> An inline element is an element that does not require a line break, it only takes up as much width as needed (ex: <i>, <b>, <a>, <small>). It takes up as much space as it needs "in line". A block element requires the entire width space/a line break (ex: <div> <hr> <ol> <p>).
+
+        2. What happens when an element is positioned absolutely? 
+> An element positioned absolutely places the element exactly where it is instructed (left, right, bottom, top). The element is relative to the nearest parent element's positioning, but otherwise is not effected by other element positioning on the page, rendering it powerful.
+
+        3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+> Make sure the element is an inline-block element.
+
+        4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+> Block by default: <div>, <p> <header>
+Inline by default: <span> <a>
+Inline-block by default: <button> 
+
+        5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+> The box model is similar to a Russian nesting doll: (from smallest to largest) content, padding, border, margin. The problem with the box model is that sometimes a browser may interpret the dimensions of the boxes differently than how the developer intended, leading to frustration. The "fix" for the box model is the CSS property "box-sizing", which allows the developer to assign it the value "border-box" which calculates an element's width by including its padding and borders. Reference: https://pressupinc.com/blog/2014/01/whats-wrong-css-box-model-fix/ 
